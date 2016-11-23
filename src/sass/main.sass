@@ -1,0 +1,76 @@
+@import _mixins
+
+#BAP-holder
+	display: none !important
+
+html
+	font-size: 16px
+
+body
+	font: $font-stack
+	&.sidebar-opened
+		overflow: hidden
+		&.client-ios
+			position: fixed
+			height: 100%
+			width: 100%
+	&.loaded
+		#tablet-mobile-menu
+			display: block
+
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+h1, h2, h3
+
+li
+	list-style: none
+
+iframe
+	border: none
+
+p
+	font-size: 1rem
+
+a
+	text-decoration: none
+
+.hidden
+	display: none !important
+
+.mobile-hidden
+	@media #{$media-sm}
+		display: none !important
+
+.mobile-visible
+	@media #{$media-sm-min}
+		display: none !important
+
+.container
+	margin: 0 auto
+	max-width: 964px
+
+.inline-middle
+	display: inline-block
+	vertical-align: middle
+
+.inline-top
+	display: inline-block
+	vertical-align: top
+
+.inline-bottom
+	display: inline-block
+	vertical-align: bottom
+
+//----------------------------------
+// HEADER
+//----------------------------------
+.header
+
+//----------------------------------
+// END HEADER
+//----------------------------------
+

@@ -1,0 +1,52 @@
+$font-stack: 1rem/1.5em Georgia,"Times New Roman","DejaVu Serif",serif
+$main-color: #ff08b1
+$main-color-hover: #ff08b1
+$success-color: #5cb85c
+$warning-color: #f0ad4e
+$info-color: #5bc0de
+$error-color: #ff5656
+$base-font-color: #393939
+
+
+//== Media queries breakpoints
+
+// Extra small screen / phone
+$screen-xs:                  480px
+$screen-xs-min:              $screen-xs
+$screen-phone:               $screen-xs-min
+
+// Small screen / tablet
+$screen-sm:                  768px
+$screen-sm-min:              $screen-sm
+$screen-tablet:              $screen-sm-min
+
+// Medium screen / desktop
+$screen-md:                  992px
+$screen-md-min:              $screen-md
+$screen-desktop:             $screen-md-min
+
+// Large screen / wide desktop
+$screen-lg:                  1200px
+$screen-lg-min:              $screen-lg
+$screen-lg-desktop:          $screen-lg-min
+
+// Ultra screen / wide desktop
+$screen-ul:                  1900px
+$screen-ul-min:              $screen-lg
+$screen-ul-desktop:          $screen-lg-min
+
+$screen-xs-max:              ($screen-sm-min - 1)
+$screen-sm-max:              ($screen-md-min - 1)
+$screen-md-max:              ($screen-lg-min - 1)
+$screen-lg-max:              ($screen-ul-min - 1)
+
+$media-lg: '(min-width: $screen-lg)'
+$media-md: '(max-width: $screen-md-max)'
+$media-md-only: '(min-width: $screen-md) and (max-width: $screen-md-max)'
+$media-md-min: '(min-width: $screen-md)'
+$media-md-sm: '(min-width: $screen-sm) and (max-width: $screen-md-max)'
+$media-sm: '(max-width: $screen-sm-max)'
+$media-sm-only: '(min-width: $screen-sm) and (max-width: $screen-sm-max)'
+$media-sm-min: '(min-width: $screen-sm)'
+$media-xs: '(max-width: $screen-xs-max)'
+$media-xxs: '(max-width: $screen-xs)'
