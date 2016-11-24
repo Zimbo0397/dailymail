@@ -32,21 +32,21 @@ $screen-lg-desktop:          $screen-lg-min
 
 // Ultra screen / wide desktop
 $screen-ul:                  1900px
-$screen-ul-min:              $screen-lg
-$screen-ul-desktop:          $screen-lg-min
+$screen-ul-min:              $screen-ul
+$screen-ul-desktop:          $screen-ul-min
 
 $screen-xs-max:              ($screen-sm-min - 1)
 $screen-sm-max:              ($screen-md-min - 1)
 $screen-md-max:              ($screen-lg-min - 1)
 $screen-lg-max:              ($screen-ul-min - 1)
 
-$media-lg: '(min-width: $screen-lg)'
-$media-md: '(max-width: $screen-md-max)'
-$media-md-only: '(min-width: $screen-md) and (max-width: $screen-md-max)'
-$media-md-min: '(min-width: $screen-md)'
-$media-md-sm: '(min-width: $screen-sm) and (max-width: $screen-md-max)'
-$media-sm: '(max-width: $screen-sm-max)'
-$media-sm-only: '(min-width: $screen-sm) and (max-width: $screen-sm-max)'
-$media-sm-min: '(min-width: $screen-sm)'
-$media-xs: '(max-width: $screen-xs-max)'
 $media-xxs: '(max-width: $screen-xs)'
+$media-xs: '(max-width: $screen-xs-max)'
+$media-sm-min: '(min-width: $screen-sm)'
+$media-sm-only: '(min-width: $screen-sm) and (max-width: $screen-sm-max)'
+$media-sm: '(max-width: $screen-sm-max)'
+$media-md-sm: '(min-width: $screen-sm) and (max-width: $screen-md-max)'
+$media-md-min: '(min-width: $screen-md)'
+$media-md-only: '(min-width: $screen-md) and (max-width: $screen-md-max)'
+$media-md: '(max-width: $screen-md-max)'
+$media-lg: '(min-width: $screen-lg)'
