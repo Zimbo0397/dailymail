@@ -35,10 +35,18 @@ body
 
 h1, h2, h3
 
+h1
+	font-family: 'graphik', Arial, sans-serif
+	margin: 0 0 4px
+	font-weight: bolder
+	letter-spacing: -0.01em
+	font-size: 34px
+	line-height: 40px
+
 li
 	list-style: none
 
-iframe
+iframe, fieldset
 	border: none
 
 p
@@ -63,20 +71,201 @@ a
 	@media #{$media-sm-min}
 		display: none !important
 
+.usability
+	left: -10000px
+	position: absolute
+	text-align: left
+	width: 1px
+	height: 1px
+	overflow: hidden
+
 .no-border
 	border: none!important
 
 .inline-middle
-	display: inline-block
-	vertical-align: middle
+	font-size: 0
+	letter-spacing: 0
+	& > *
+		display: inline-block
+		font: $font-stack
+		vertical-align: middle
 
 .inline-top
-	display: inline-block
-	vertical-align: top
+	font-size: 0
+	letter-spacing: 0
+	& > *
+		display: inline-block
+		font: $font-stack
+		vertical-align: top
 
 .inline-bottom
-	display: inline-block
-	vertical-align: bottom
+	font-size: 0
+	letter-spacing: 0
+	& > *
+		display: inline-block
+		font: $font-stack
+		vertical-align: bottom
+
+//----------------------------------
+// COLORS
+//----------------------------------
+.home-category-color
+	background: #004db3
+	a
+		background: #004db3
+		border-color: #e8f3ff
+		color: #e8f3ff
+	.active
+		&:before
+			background-color: #e8f3ff
+.news-category-color
+	background: #00aad2
+	a
+		background: #00aad2
+		border-color: #e8fbff
+		color: #e8fbff
+	.active
+		&:before
+			background-color: #e8fbff
+.sport-category-color
+	background: #0cac0c
+	a
+		background: #0cac0c
+		border-color: #e8ffe8
+		color: #e8ffe8
+	.active
+		&:before
+			background-color: #e8ffe8
+.tvshowbiz-category-color
+	background: #e01c44
+	a
+		background: #e01c44
+		border-color: #ffe8ed
+		color: #ffe8ed
+	.active
+		&:before
+			background-color: #ffe8ed
+.femail-category-color
+	background: #c562a5
+	a
+		background: #c562a5
+		border-color: #f7e7ff
+		color: #f7e7ff
+	.active
+		&:before
+			background-color: #f7e7ff
+.health-category-color
+	background: #3cc
+	a
+		background: #3cc
+		border-color: #edffff
+		color: #edffff
+	.active
+		&:before
+			background-color: #edffff
+.science-category-color
+	background: #f60
+	a
+		background: #f60
+		border-color: #fff0e6
+		color: #fff0e6
+	.active
+		&:before
+			background-color: #fff0e6
+.money-category-color
+	background: #451344
+	a
+		background: #451344
+		border-color: #f1e8f8
+		color: #f1e8f8
+	.active
+		&:before
+			background-color: #f1e8f8
+.video-category-color
+	background: #004db4
+	a
+		background: #004db4
+		border-color: #e8f3ff
+		color: #e8f3ff
+	.active
+		&:before
+			background-color: #e8f3ff
+.travel-category-color
+	background: #082340
+	a
+		background: #082340
+		border-color: #e3edf8
+		color: #e3edf8
+	.active
+		&:before
+			background-color: #e3edf8
+
+
+
+.home-category-hover
+	a:hover
+		color: #004db3
+	&.active
+		&:before
+			background-color: #004db3
+.news-category-hover
+	a:hover
+		color: #00aad2
+	&.active
+		&:before
+			background-color: #00aad2
+.sport-category-hover
+	a:hover
+		color: #0cac0c
+	&.active
+		&:before
+			background-color: #0cac0c
+.tvshowbiz-category-hover
+	a:hover
+		color: #e01c44
+	&.active
+		&:before
+			background-color: #e01c44
+.femail-category-hover
+	a:hover
+		color: #c562a5
+	&.active
+		&:before
+			background-color: #c562a5
+.health-category-hover
+	a:hover
+		color: #3cc
+	&.active
+		&:before
+			background-color: #3cc
+.science-category-hover
+	a:hover
+		color: #f60
+	&.active
+		&:before
+			background-color: #f60
+.money-category-hover
+	a:hover
+		color: #451344
+	&.active
+		&:before
+			background-color: #451344
+.video-category-hover
+	a:hover
+		color: #004db4
+	&.active
+		&:before
+			background-color: #004db4
+.travel-category-hover
+	a:hover
+		color: #082340
+	&.active
+		&:before
+			background-color: #082340
+
+//----------------------------------
+// END COLORS
+//----------------------------------
 
 //----------------------------------
 // HEADER
@@ -94,7 +283,7 @@ a
 .header-femail
 	background: transparent url(http://i.dailymail.co.uk/i/pix/channelheaders/femail_masthead.gif) 100% 50% no-repeat
 	border-top: 1px solid #e3e3e3
-	margin: 25px 0 8px
+	margin: 25px 0 0
 
 .masthead
 	height: 91px
@@ -117,6 +306,10 @@ a
 	li
 		display: inline-block
 .nav-primary
+	background: url('img/bg/navigation_bottom.gif') repeat-x 0 100%
+	border: 1px solid silver
+	border-bottom: none
+	padding: 3px 0 0
 	a
 		color: #333
 		margin: 4px 0 7px
@@ -124,19 +317,59 @@ a
 		border-left: 1px solid #000
 		font-size: 15px
 		font-weight: bold
+		margin: 4px 0 7px
+	li
+		&.active
+			position: relative
+			a
+				border: none
+				color: #fff
+			&:before
+				content: ''
+				position: absolute
+				left: -2px
+				right: -2px
+				top: 0
+				bottom: -2px
+				border-top-right-radius: 5px
+				border-top-left-radius: 5px
+				z-index: -1
+			& + li
+				a
+					border: none
 .nav-secondary
+	font-size: 0
+	letter-spacing: 0
 	white-space: nowrap
 	& > *
+		font-size: 1rem
 		white-space: normal
+	a
+		color: #f7e7ff
+		font-weight: bold
+		font-size: 0.75em
+		padding: 0 6px
+		border-left-width: 1px
+		border-left-style: solid
+		&:hover
+			text-decoration: underline
+	li
+		&:first-child
+			a
+				border: none
 	.column-left,
 	.column-right
 		display: inline-block
+		vertical-align: top
+		& > *
+			font-size: 1rem
+			white-space: normal
 	.column-left
 		width: 100% - 12%
-		width: calc(100% - 120px)
+		width: calc(100% - 140px)
 	.column-right
 		width: 12%
-		width: calc(120px)
+		width: calc(140px)
 
 		text-align: right
 //----------------------------------
@@ -145,16 +378,124 @@ a
 
 
 //----------------------------------
-// END NAVIGATION
+// PAGE CONTAINER
 //----------------------------------
 .page-container
-	white-space: nowrap
-	& > *
-		white-space: normal
+	@extend .inline-top
 	.column-left
-		
+		// width: 68%
+		width: 66%
+		margin-right: 2%
 	.column-right
+		width: 32%
 //----------------------------------
-// END NAVIGATION
+// END PAGE CONTAINER
+//----------------------------------
+
+//----------------------------------
+// LEFT COL
+//----------------------------------
+.page-container .column-left
+//----------------------------------
+// END LEFT COL
+//----------------------------------
+
+//----------------------------------
+// END RIGHT COL
+//----------------------------------
+.page-container .column-right
+	.item
+	.beta_search_wrapper
+		background: #003a87 url(../img/icons/spt_search.png) 0 -100px repeat-x
+	.bow
+		color: #000
+		background-color: #fff
+	.bing
+		input
+			height: auto
+		font-size: 0.83em
+		background: #003a87 url(../img/icons/spt_search.png) 0 -100px repeat-x
+		padding: 2px
+		&.money
+			font-size: 0.83em
+			background: #003a87 url(../img/icons/spt_search3.png) 0 -100px repeat-x
+			padding: 2px
+		&.home
+			font-size: 0.83em
+			background: #003a87 url(../img/icons/spt_search.png) 0 -100px repeat-x
+			padding: 2px
+		.bing-logo
+			display: block
+			float: right
+			margin-right: 4px
+			width: 56px
+			height: 31px
+			background: url(../img/icons/spt_search.png) 0 -1px no-repeat
+			cursor: pointer
+			display: inline
+		.bow
+			float: left
+			width: 236px
+			border: 1px solid #004db3
+		.ctnr-l, .ctnr-r
+			display: block
+			padding: 4px 4px 4px 0
+			min-height: 21px
+			height: 21px
+		.ctnr-l
+			width: 80px
+			float: left
+			font-size: 1.1em
+			border-right: 1px solid #004db3
+			padding-right: 0
+			line-height: 21px
+			padding-top: 8px
+			height: 17px
+			input
+				margin: -3px 1px 0 2px
+				vertical-align: middle
+				width: 13px
+				height: 13px
+				margin-top: -1px
+		.ctnr-r
+			width: 150px
+			float: right
+		.text-input, button
+			vertical-align: top
+			border: 0
+
+	.search-button
+		&.home
+			display: block
+			float: right
+			margin-right: 4px
+			width: 56px
+			height: 31px
+			background: url(../img/bg/spt_search.png) 0 -1px no-repeat
+			cursor: pointer
+			display: inline
+
+	.text-input
+		padding: 0 4px
+		min-height: 21px
+		font-size: 1.4em
+		width: 120px
+		outline: none
+		line-height: 21px
+		margin: -1px 0
+		height: 21px
+		overflow: visible
+		-webkit-appearance: caret
+	button
+		background: #d6dbd8 url(../img/icons/spt_search.png) 0 -50px no-repeat
+		width: 21px
+		height: 21px
+		margin-left: 1px
+		cursor: pointer
+		&::-moz-focus-inner
+			border: 0
+
+//----------------------------------
+// END RIGHT COL
 //----------------------------------
 

@@ -1,6 +1,7 @@
 doctype html
 html(lang='en')
 	head
+		meta(charset="utf-8")
 		link(rel='shortcut icon', href='img/icons/favicon/favicon.ico', type='image/vnd.microsoft.icon')
 		link(type='text/css', rel='stylesheet', href='css/main.css')
 		meta(name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no")
@@ -14,48 +15,46 @@ html(lang='en')
 							img#logo-main.logo-main(alt='MailOnline - news, sport, celebrity, science and health stories', height='66', src='img/icons/logo_mol.gif', width='350')
 				.nav-primary
 					ul
-						li.home
+						li.home.home-category-hover
 							span.link-gr6ox.linkro-ccox
 								a.no-border(href='/home/index.html')  Home
-						li.news
+						li.news.news-category-hover
 							span.link-gr6ox.linkro-ccox
 								a(href='/news/index.html')  News
-						li.home
+						li.home.home-category-hover
 							span.link-gr6ox.linkro-ccox
 								a(href='/ushome/index.html')  U.S.
-						li.sport
+						li.sport.sport-category-hover
 							span.link-gr6ox.linkro-ccox
 								a(href='/sport/index.html')  Sport
-						li.tvshowbiz
+						li.tvshowbiz.tvshowbiz-category-hover
 							span.link-gr6ox.linkro-ccox
 								a(href='/tvshowbiz/index.html')  TV&Showbiz
-						li.home
+						li.home.home-category-hover
 							span.link-gr6ox.linkro-ccox
 								a(href='/auhome/index.html')  Australia
-						li.femail
-							span.tl  
-							span.tr  
+						li.femail.femail-category-hover.active
 							span.link-wocc.linkro-wocc
 								a(href='/femail/index.html') Femail
-						li.health
+						li.health.health-category-hover
 							span.link-gr6ox.linkro-ccox
-								a.no-border(href='/health/index.html')  Health
-						li.sciencetech
+								a(href='/health/index.html')  Health
+						li.sciencetech.sciencetech-category-hover
 							span.link-gr6ox.linkro-ccox
 								a(href='/sciencetech/index.html')  Science
-						li.money
+						li.money.money-category-hover
 							span.link-gr6ox.linkro-ccox
 								a(href='/money/index.html')  Money
-						li.video
+						li.video.video-category-hover
 							span.link-gr6ox.linkro-ccox
 								a(href='/video/index.html')  Video
-						li.travel
+						li.travel.travel-category-hover
 							span.link-gr6ox.linkro-ccox
 								a(href='/travel/index.html')  Travel
-						li.femail
+						li.femail.femail-category-hover
 							span.link-gr6ox.linkro-ccox
 								a(href='/femail/fashionfinder/index.html')  Fashion Finder
-				.nav-secondary
+				.nav-secondary.femail-category-color
 					ul.column-left
 						li.first
 							a(href='/home/latest/index.html#femail') Latest Headlines
@@ -532,31 +531,25 @@ html(lang='en')
 
 				// RIGHT COL
 				.column-right
-					.beta
+					.right-sidebar-holder
 						.item.beta_search_wrapper
-							a(name='search')
-							form#p-1003-bing(name='searchForm', action='/home/search.html', method='get')
-								.bing.cnr5
-									fieldset.cleared
-										legend.usability Bing
-										.bow.cleared
-											span.ctnr-l
-												span.nowrap
-													input#p-1003-bing-site.ie-radio(name='sel', value='site', type='radio', checked='checked')
-													label(for='p-1003-bing-site') Site
-												span.nowrap
-													input#p-1003-bing-web.ie-radio(name='sel', value='web', type='radio')
-													label(for='p-1003-bing-web') Web
-											span.ctnr-r
-												label.usability(for='p-1003-searchPhrase') Enter search term:
-												input#p-1003-searchPhrase.text-input(name='searchPhrase', type='text', placeholder='Enter your search')
-												button(type='submit')
-													span.usability Search
-										span.bing-logo
-									span.tl
-									span.tr
-									span.bl
-									span.br
+							form(name='searchForm', action='/home/search.html', method='get')
+								fieldset
+									legend.usability Bing
+									.bow
+										span.ctnr-l
+											span.nowrap
+												input#p-1003-bing-site.ie-radio(name='sel', value='site', type='radio', checked='checked')
+												label(for='p-1003-bing-site') Site
+											span.nowrap
+												input#p-1003-bing-web.ie-radio(name='sel', value='web', type='radio')
+												label(for='p-1003-bing-web') Web
+										span.ctnr-r
+											label.usability(for='p-1003-searchPhrase') Enter search term:
+											input#p-1003-searchPhrase.text-input(name='searchPhrase', type='text', placeholder='Enter your search')
+											button(type='submit')
+												span.usability Search
+									span.bing-logo
 						.item.mpu_zero_height_wrapper
 							#p-1004.mpu-zero.adHolder.molads_mpu_top
 						.home.item.html_snippet_module
@@ -992,7 +985,7 @@ html(lang='en')
 
 
 		// scripts block
-		//- link(type='text/css', rel='stylesheet', href='css/additional.css')
+		link(type='text/css', rel='stylesheet', href='css/additional.css')
 		script(src='js/main.js', type='text/javascript')
 
 		link(href="//vjs.zencdn.net/5.8/video-js.min.css" rel="stylesheet")
