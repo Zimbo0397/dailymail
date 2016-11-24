@@ -1,11 +1,19 @@
 @import _mixins
 
+.chromeperfectpixel-initial-block iframe,
+#chromeperfectpixel-supported-by
+	display: none !important
+#__bs_notify__
+	display: none !important
+	opacity: 0 !important
+
 #BAP-holder
 	display: none !important
 
 html
 	font-size: 16px
 	@media #{$media-xs}
+		font-size: 16px
 
 body
 	font: $font-stack
@@ -37,7 +45,12 @@ p
 	font-size: 1rem
 
 a
+	color: #003580
 	text-decoration: none
+
+.container
+	margin: 0 auto
+	max-width: 964px
 
 .hidden
 	display: none !important
@@ -50,9 +63,8 @@ a
 	@media #{$media-sm-min}
 		display: none !important
 
-.container
-	margin: 0 auto
-	max-width: 964px
+.no-border
+	border: none!important
 
 .inline-middle
 	display: inline-block
@@ -69,9 +81,80 @@ a
 //----------------------------------
 // HEADER
 //----------------------------------
-.header
+.page-header
+	// border: 1px solid #e3e3e3
 
 //----------------------------------
 // END HEADER
+//----------------------------------
+
+//----------------------------------
+// FEMAIL
+//----------------------------------
+.header-femail
+	background: transparent url(http://i.dailymail.co.uk/i/pix/channelheaders/femail_masthead.gif) 100% 50% no-repeat
+	border-top: 1px solid #e3e3e3
+	margin: 25px 0 8px
+
+.masthead
+	height: 91px
+	background-position: 100%
+	background-repeat: no-repeat
+	position: relative
+	.logo-main
+		margin-top: 8px
+
+//----------------------------------
+// END FEMAIL
+//----------------------------------
+
+
+//----------------------------------
+// NAVIGATION
+//----------------------------------
+.nav-primary,
+.nav-secondary
+	li
+		display: inline-block
+.nav-primary
+	a
+		color: #333
+		margin: 4px 0 7px
+		padding: 0 4px 0 5px
+		border-left: 1px solid #000
+		font-size: 15px
+		font-weight: bold
+.nav-secondary
+	white-space: nowrap
+	& > *
+		white-space: normal
+	.column-left,
+	.column-right
+		display: inline-block
+	.column-left
+		width: 100% - 12%
+		width: calc(100% - 120px)
+	.column-right
+		width: 12%
+		width: calc(120px)
+
+		text-align: right
+//----------------------------------
+// END NAVIGATION
+//----------------------------------
+
+
+//----------------------------------
+// END NAVIGATION
+//----------------------------------
+.page-container
+	white-space: nowrap
+	& > *
+		white-space: normal
+	.column-left
+		
+	.column-right
+//----------------------------------
+// END NAVIGATION
 //----------------------------------
 
