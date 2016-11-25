@@ -56,6 +56,9 @@ a
 	color: #003580
 	text-decoration: none
 
+button
+	border: none
+
 .container
 	margin: 0 auto
 	max-width: 964px
@@ -272,6 +275,7 @@ a
 //----------------------------------
 .page-header
 	// border: 1px solid #e3e3e3
+	margin-bottom: 8px
 
 //----------------------------------
 // END HEADER
@@ -309,11 +313,11 @@ a
 	background: url('img/bg/navigation_bottom.gif') repeat-x 0 100%
 	border: 1px solid silver
 	border-bottom: none
-	padding: 3px 0 0
+	padding: 5px 0 2px
 	a
 		color: #333
 		margin: 4px 0 7px
-		padding: 0 4px 0 5px
+		padding: 0 3px 0 6px
 		border-left: 1px solid #000
 		font-size: 15px
 		font-weight: bold
@@ -324,12 +328,13 @@ a
 			a
 				border: none
 				color: #fff
+				padding: 0 5px 0 6px
 			&:before
 				content: ''
 				position: absolute
 				left: -2px
 				right: -2px
-				top: 0
+				top: -1px
 				bottom: -2px
 				border-top-right-radius: 5px
 				border-top-left-radius: 5px
@@ -340,9 +345,9 @@ a
 .nav-secondary
 	font-size: 0
 	letter-spacing: 0
+	padding: 2px 0 2px
 	white-space: nowrap
 	& > *
-		font-size: 1rem
 		white-space: normal
 	a
 		color: #f7e7ff
@@ -354,16 +359,21 @@ a
 		&:hover
 			text-decoration: underline
 	li
+		font-size: 0
+		vertical-align: middle
 		&:first-child
 			a
 				border: none
+		&.active
+			a
+				font-style: italic
+		a
+			font-size: 0.75rem
+			white-space: normal
 	.column-left,
 	.column-right
 		display: inline-block
 		vertical-align: top
-		& > *
-			font-size: 1rem
-			white-space: normal
 	.column-left
 		width: 100% - 12%
 		width: calc(100% - 140px)
@@ -383,13 +393,23 @@ a
 .page-container
 	@extend .inline-top
 	.column-left
-		// width: 68%
 		width: 66%
 		margin-right: 2%
 	.column-right
 		width: 32%
 //----------------------------------
 // END PAGE CONTAINER
+//----------------------------------
+
+//----------------------------------
+// MAIN AD SECTION
+//----------------------------------
+.ad-container
+	margin-bottom: 15px
+	.ad-section
+		margin: 0 -3px
+//----------------------------------
+// END MAIN AD SECTION
 //----------------------------------
 
 //----------------------------------
@@ -490,8 +510,6 @@ a
 		background: #d6dbd8 url(../img/icons/spt_search.png) 0 -50px no-repeat
 		width: 21px
 		height: 21px
-		margin-left: 1px
-		cursor: pointer
 		&::-moz-focus-inner
 			border: 0
 
