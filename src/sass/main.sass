@@ -287,7 +287,7 @@ button
 .header-femail
 	background: transparent url(http://i.dailymail.co.uk/i/pix/channelheaders/femail_masthead.gif) 100% 50% no-repeat
 	border-top: 1px solid #e3e3e3
-	margin: 25px 0 0
+	margin: 26px 0 0
 
 .masthead
 	height: 91px
@@ -310,10 +310,10 @@ button
 	li
 		display: inline-block
 .nav-primary
-	background: url('img/bg/navigation_bottom.gif') repeat-x 0 100%
+	background: url('../img/bg/navigation_bottom.gif') repeat-x 0 100%
 	border: 1px solid silver
 	border-bottom: none
-	padding: 5px 0 2px
+	padding: 4px 0 3px
 	a
 		color: #333
 		margin: 4px 0 7px
@@ -329,6 +329,8 @@ button
 				border: none
 				color: #fff
 				padding: 0 5px 0 6px
+				z-index: 1
+				position: relative
 			&:before
 				content: ''
 				position: absolute
@@ -338,7 +340,7 @@ button
 				bottom: -2px
 				border-top-right-radius: 5px
 				border-top-left-radius: 5px
-				z-index: -1
+				z-index: 0
 			& + li
 				a
 					border: none
@@ -369,6 +371,7 @@ button
 				font-style: italic
 		a
 			font-size: 0.75rem
+			vertical-align: bottom
 			white-space: normal
 	.column-left,
 	.column-right
@@ -427,6 +430,8 @@ button
 	.item
 	.beta_search_wrapper
 		background: #003a87 url(../img/icons/spt_search.png) 0 -100px repeat-x
+		label
+			font-size: 0.8em
 	.bow
 		color: #000
 		background-color: #fff
