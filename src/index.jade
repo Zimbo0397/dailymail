@@ -76,7 +76,7 @@ html(lang='en')
 							a(href='/femail/femailblogs/index.html') Blogs
 						li
 							a(href='http://blakesmalltalkblog.dailymail.co.uk/', target='_blank') Baby Blog
-					ul#logout_comp.column-right(style='display: none;')
+					ul#logout_comp.column-right
 						li.first
 							a(href='/registration/profile.html', rel='nofollow') My Profile
 						li#logout.first
@@ -109,8 +109,8 @@ html(lang='en')
 									font(style='font-size:1.4em;')
 										strong Richard is now looking forward to pursuing a solo career in jazz  
 							p.author-section.byline-plain
-								| By
-								a.author(href='/home/search.html?s=&authornamef=Martha+Cliff+for+MailOnline', rel='nofollow') Martha Cliff for MailOnline
+								| By  
+								a.author(href='/home/search.html?s=&authornamef=Martha+Cliff+for+MailOnline', rel='nofollow')  Martha  Cliff  for  MailOnline
 							p.byline-section
 								span.article-timestamp.article-timestamp-published
 									span.article-timestamp-label Published:
@@ -120,7 +120,7 @@ html(lang='en')
 									span.article-timestamp-label Updated:
 									|   19:20 GMT, 15 November 2016
 							p
-							#articleIconLinksContainer
+							#articleIconLinksContainer.social-links
 								ul
 									li.share-facebook
 									li.share-twitter
@@ -133,51 +133,45 @@ html(lang='en')
 											span.wai e-mail
 									li#shareLinkTop.share-icons
 										a.js-sl.share-link(href='#socialLinks')
-								.share-count
-									b 78
-									span shares
+									li.share-count
+										b 78
+										span shares
 								a.comments-count.home(href='/femail/article-3938014/I-ve-gone-obese-athlete-Britain-s-Got-Talent-star-loses-four-stone-FOUR-MONTHS-branded-fat-one-band.html#comments')
 									span
 									p.count-number          364
 									p.count-text
 										| View 
-										br
 										|  comments
 							p
 							div(itemprop='articleBody')
 								p.mol-para-with-font
-									font(style='font-size: 1.2em')
-										| A 
-										a(style='font-weight: bold;', target='_blank', href='/tvshowbiz/britains_got_talent/index.html') Britain's Got Talent
-										|  winner has revealed how he lost almost four stone in four months after being branded 'the fat one' in his band Collabro.
+									| A 
+									a(style='font-weight: bold;', target='_blank', href='/tvshowbiz/britains_got_talent/index.html') Britain's Got Talent
+									|  winner has revealed how he lost almost four stone in four months after being branded 'the fat one' in his band Collabro.
 								p.mol-para-with-font
-									font(style='font-size: 1.2em')
-										| Richard Hadfield, 22, who has since left the band, slimmed down from 18st 3lbs to 14st 6lbs with a super-intense weight loss regime which he started in June.
+									| Richard Hadfield, 22, who has since left the band, slimmed down from 18st 3lbs to 14st 6lbs with a super-intense weight loss regime which he started in June.
 								p.mol-para-with-font
-									font(style='font-size: 1.2em')
-										| Richard, from Stratford, East London, began his diet overhaul just days after he  quit the all-male singing group.
+									| Richard, from Stratford, East London, began his diet overhaul just days after he  quit the all-male singing group.
 								p.mol-para-with-font
-									font(style='font-size: 1.2em')
-										span.mol-style-bold Scroll down for video 
+									span.mol-style-bold Scroll down for video 
 								.artSplitter.mol-img-group
 									.mol-img
-										img#i-79dad03e3c015b27.blkBorder.img-share(src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C56C00000578-3938014-Former_Collabro_singer_Richard_Hadfield_has_revealed_his_incredi-a-14_1479237607265.jpg', style='display: none', height='951', width='634', alt='Former Collabro singer Richard Hadfield has revealed his incredible four stone weight loss in as many months ')
+										img#i-79dad03e3c015b27.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C56C00000578-3938014-Former_Collabro_singer_Richard_Hadfield_has_revealed_his_incredi-a-14_1479237607265.jpg', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C56C00000578-3938014-Former_Collabro_singer_Richard_Hadfield_has_revealed_his_incredi-a-14_1479237607265.jpg',height='951', width='634', alt='Former Collabro singer Richard Hadfield has revealed his incredible four stone weight loss in as many months ')
 										noscript
 											img#i-79dad03e3c015b27.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C56C00000578-3938014-Former_Collabro_singer_Richard_Hadfield_has_revealed_his_incredi-a-14_1479237607265.jpg', height='951', width='634', alt='Former Collabro singer Richard Hadfield has revealed his incredible four stone weight loss in as many months ')
 									p.imageCaption
 										| Former Collabro singer Richard Hadfield has revealed his incredible four stone weight loss in as many months
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| The singer fell out with the other band members and decided to forge a new career as a solo career which, he says, was beneficial in helping him reach his weight-loss goal.
+									| The singer fell out with the other band members and decided to forge a new career as a solo career which, he says, was beneficial in helping him reach his weight-loss goal.
 								div
 									#p-21.related-carousel.with-fb.femail.half(data-track-module='am-related_carousel^related_carousel', data-track-selector='.rotator-panels a:not([class*=external])', data-track-pos='static')
 										.rotator.bdrcc
 											.rotator-title
 												h2 RELATED ARTICLES
 												ul.rotator-pages.link-xocc
-													li.rotator-prev
+													li.rotator-prev.disabled
 														a(href='#', data-page='prev') Previous
-													li
+													li.active
 														a(href='#', data-page='1') 1
 													li
 														a(href='#', data-page='2') 2
@@ -200,20 +194,18 @@ html(lang='en')
 											.share
 												span.wai Share
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| He said: 'Being free from the band really sparked my weight loss. I had been unhappy for a long time and comfort ate to escape my misery.
+									| He said: 'Being free from the band really sparked my weight loss. I had been unhappy for a long time and comfort ate to escape my misery.
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| 'My weight sky rocketed up to 18st 3lbs and I was clinically obese with 30 per cent body fat. I started being known as the 'fat one' in the band. It really hit me hard.
+									| 'My weight sky rocketed up to 18st 3lbs and I was clinically obese with 30 per cent body fat. I started being known as the 'fat one' in the band. It really hit me hard.
 								.artSplitter.mol-img-group
 									.splitLeft
 										.mol-img
-											img#i-bd1b6b3dc8eaf2dc.blkBorder.img-share(src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C74C00000578-3938014-Richard_began_his_weight_loss_journey_16_weeks_ago_after_quittin-a-16_1479237607270.jpg', style='display: none', height='590', width='306', alt="Richard began his weight loss journey 16 weeks ago after quitting the band who won Britain's Got Talent")
+											img#i-bd1b6b3dc8eaf2dc.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C74C00000578-3938014-Richard_began_his_weight_loss_journey_16_weeks_ago_after_quittin-a-16_1479237607270.jpg', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C74C00000578-3938014-Richard_began_his_weight_loss_journey_16_weeks_ago_after_quittin-a-16_1479237607270.jpg', height='590', width='306', alt="Richard began his weight loss journey 16 weeks ago after quitting the band who won Britain's Got Talent")
 											noscript
 												img#i-bd1b6b3dc8eaf2dc.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C74C00000578-3938014-Richard_began_his_weight_loss_journey_16_weeks_ago_after_quittin-a-16_1479237607270.jpg', height='590', width='306', alt="Richard began his weight loss journey 16 weeks ago after quitting the band who won Britain's Got Talent")
 									.splitRight
 										.mol-img
-											img#i-4a7bc75a4fb9fbf6.blkBorder.img-share(src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CDF000000578-3938014-Pictured_at_week_one_before_he_had_lost_any_weight-a-18_1479237607273.jpg', style='display: none', height='590', width='306', alt='Pictured at week one before he had lost any weight')
+											img#i-4a7bc75a4fb9fbf6.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CDF000000578-3938014-Pictured_at_week_one_before_he_had_lost_any_weight-a-18_1479237607273.jpg', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CDF000000578-3938014-Pictured_at_week_one_before_he_had_lost_any_weight-a-18_1479237607273.jpg',  height='590', width='306', alt='Pictured at week one before he had lost any weight')
 											noscript
 												img#i-4a7bc75a4fb9fbf6.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CDF000000578-3938014-Pictured_at_week_one_before_he_had_lost_any_weight-a-18_1479237607273.jpg', height='590', width='306', alt='Pictured at week one before he had lost any weight')
 									.clear
@@ -221,23 +213,20 @@ html(lang='en')
 										| Richard began his weight loss journey 16 weeks ago after quitting the band who won Britain's Got Talent. Pictured at week one
 								.artSplitter.mol-img-group
 									.mol-img
-										img#i-59477de9c8778bbe.blkBorder.img-share(src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C88700000578-3938014-Richard_has_slimmed_down_from_18st_3lbs_to_14st_6lbs_with_a_supe-a-17_1479237607272.jpg', style='display: none', height='951', width='634', alt='Richard has slimmed down from 18st 3lbs to 14st 6lbs with a super-intense weight loss regime')
+										img#i-59477de9c8778bbe.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C88700000578-3938014-Richard_has_slimmed_down_from_18st_3lbs_to_14st_6lbs_with_a_supe-a-17_1479237607272.jpg', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C88700000578-3938014-Richard_has_slimmed_down_from_18st_3lbs_to_14st_6lbs_with_a_supe-a-17_1479237607272.jpg',  height='951', width='634', alt='Richard has slimmed down from 18st 3lbs to 14st 6lbs with a super-intense weight loss regime')
 										noscript
 											img#i-59477de9c8778bbe.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C88700000578-3938014-Richard_has_slimmed_down_from_18st_3lbs_to_14st_6lbs_with_a_supe-a-17_1479237607272.jpg', height='951', width='634', alt='Richard has slimmed down from 18st 3lbs to 14st 6lbs with a super-intense weight loss regime')
 									p.imageCaption
 										| Richard has slimmed down from 18st 3lbs to 14st 6lbs with a super-intense weight loss regime
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| 'I was embarrassed about my weight but I was in a really bad environment professionally and couldn't stop eating.'
+									| 'I was embarrassed about my weight but I was in a really bad environment professionally and couldn't stop eating.'
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| Richard was determined to turn his life around but knew that he needed some help rebooting his diet.
+									| Richard was determined to turn his life around but knew that he needed some help rebooting his diet.
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| His girlfriend Roxy Henley, 25, had friends who had lost weight using Forza Supplements' meal replacement drinks and recommended them to Richard.
+									| His girlfriend Roxy Henley, 25, had friends who had lost weight using Forza Supplements' meal replacement drinks and recommended them to Richard.
 								.artSplitter.mol-img-group
 									.mol-img
-										img#i-63f455abe12e54af.blkBorder.img-share(src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CA7800000578-3938014-Richard_said_that_he_was_sick_of_being_known_as_the_fat_one_and_-a-19_1479237607282.jpg', style='display: none', height='951', width='634', alt="Richard said that he was sick of being known as the 'fat one' and swapped his diet of greasy burgers for meal replacement shakes")
+										img#i-63f455abe12e54af.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CA7800000578-3938014-Richard_said_that_he_was_sick_of_being_known_as_the_fat_one_and_-a-19_1479237607282.jpg', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CA7800000578-3938014-Richard_said_that_he_was_sick_of_being_known_as_the_fat_one_and_-a-19_1479237607282.jpg', height='951', width='634', alt="Richard said that he was sick of being known as the 'fat one' and swapped his diet of greasy burgers for meal replacement shakes")
 										noscript
 											img#i-63f455abe12e54af.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CA7800000578-3938014-Richard_said_that_he_was_sick_of_being_known_as_the_fat_one_and_-a-19_1479237607282.jpg', height='951', width='634', alt="Richard said that he was sick of being known as the 'fat one' and swapped his diet of greasy burgers for meal replacement shakes")
 									p.imageCaption
@@ -249,42 +238,35 @@ html(lang='en')
 											video#test-video.video-js.vjs-default-skin(controls='', data-opts='{"linkBaseURL":"http://www.dailymail.co.uk/femail/article-3938014/I-ve-gone-obese-athlete-Britain-s-Got-Talent-star-loses-four-stone-FOUR-MONTHS-branded-fat-one-band.html#v-6408094405198264024","isMobile":false,"src":"http://video.dailymail.co.uk/video/mol/2016/11/15/6408094405198264024/1024x576_MP4_6408094405198264024.mp4","source":"PR","playerId":"default","title":"BGT winner Richard Hadfield reveals weight-loss journey","preload":"none","initialVideo":true,"thumbnail":"http://i.dailymail.co.uk/i/pix/2016/11/15/12/3A665F9000000578-0-image-a-1_1479212929958.jpg","poster":"http://i.dailymail.co.uk/i/pix/2016/11/15/12/3A665F9000000578-0-image-a-2_1479212931648.jpg","syndicationService":null,"plugins":{"related-videos":{"videos":"http://www.dailymail.co.uk/api/player/1358703/related-videos.json"},"tracking":{"channelShortName":"femail","sponsored":false,"referenceId":1358703,"trackingType":"embedded"},"ads-setup":{"videoAdServerUrl":"http://pubads.g.doubleclick.net/gampad/ads?sz=[size]&iu=%2F5765%2Fdm.video%2Fdm_video_femail&ciu_szs=&impl=s&gdfp_req=1&env=vp&output=xml_vast3&unviewed_position_start=1&url=[referrer_url]&correlator=[timestamp]","adsEnabled":true,"useIMASDK":false,"adsCancelTimeout":15000,"screen":{"width":636,"height":358}},"autoplay-next-video":{"videos":"http://www.dailymail.co.uk/api/player/1358703/related-videos.json","countdown_time":10},"flyout":{"viewportOffset":0.4,"switchBack":true},"social-share":{"embedUrl":"http://www.dailymail.co.uk/embed/video/1358703.html"},"sources":{"url":"http://www.dailymail.co.uk/api/player/1358703/video-sources.json"}},"videoId":"6408094405198264024","descr":"The singer who won Britain\'s Got Talent 2014\nreveals how a weight loss programme helped him shed over 3 stone","referenceId":1358703}', preload='none')
 												source(src='http://video.dailymail.co.uk/video/mol/2016/11/15/6408094405198264024/1024x576_MP4_6408094405198264024.mp4', type='video/mp4')
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| Richard decided to give them a try, replacing breakfast and lunch each day with a 204 calorie strawberry or chocolate shake - and soon the weight started to drop off.
+									| Richard decided to give them a try, replacing breakfast and lunch each day with a 204 calorie strawberry or chocolate shake - and soon the weight started to drop off.
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| He then teamed up with the experts from the supplements brand to devise a new fitness regime and meal planner to help him get back in perfect shape.
+									| He then teamed up with the experts from the supplements brand to devise a new fitness regime and meal planner to help him get back in perfect shape.
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| He lost 3st 11lbs  in just four months and now has the ripped torso he has always wanted.
+									| He lost 3st 11lbs  in just four months and now has the ripped torso he has always wanted.
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| Richard joked: 'Roxy loves the new me obviously but she's not too happy about my chest being hard. She can't get comfy anymore!
+									| Richard joked: 'Roxy loves the new me obviously but she's not too happy about my chest being hard. She can't get comfy anymore!
 								.artSplitter.mol-img-group
 									.mol-img
-										img#i-191efd6e5d5cea49.blkBorder.img-share(src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/0D095AB100000514-3938014-Richard_pictured_left_with_Collabro_says_that_leaving_the_band_w-a-15_1479237607268.jpg', style='display: none', height='567', width='634', alt='Richard (pictured left with Collabro) says that leaving the band was beneficial towards his weight loss goal ')
+										img#i-191efd6e5d5cea49.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/0D095AB100000514-3938014-Richard_pictured_left_with_Collabro_says_that_leaving_the_band_w-a-15_1479237607268.jpg', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/0D095AB100000514-3938014-Richard_pictured_left_with_Collabro_says_that_leaving_the_band_w-a-15_1479237607268.jpg', height='567', width='634', alt='Richard (pictured left with Collabro) says that leaving the band was beneficial towards his weight loss goal ')
 										noscript
 											img#i-191efd6e5d5cea49.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/0D095AB100000514-3938014-Richard_pictured_left_with_Collabro_says_that_leaving_the_band_w-a-15_1479237607268.jpg', height='567', width='634', alt='Richard (pictured left with Collabro) says that leaving the band was beneficial towards his weight loss goal ')
 									p.imageCaption
 										| Richard (pictured left with Collabro) says that leaving the band was beneficial towards his weight loss goal
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| 'She's been so helpful in the whole process. Roxy would always be snatching sweets out of my grasp. One time she found my secret stash of chocolate - I never saw that again.'
+									| 'She's been so helpful in the whole process. Roxy would always be snatching sweets out of my grasp. One time she found my secret stash of chocolate - I never saw that again.'
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| Richard, who lives with his girlfriend, had a brilliant first year after winning Britain's Got Talent with Collabro after impressing judge Simon Cowell with his singing.
+									| Richard, who lives with his girlfriend, had a brilliant first year after winning Britain's Got Talent with Collabro after impressing judge Simon Cowell with his singing.
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| The band had a sell-out world tour and a hit album and they seemed set to emulate the success of Cowell's other male singing group Il Divo.
+									| The band had a sell-out world tour and a hit album and they seemed set to emulate the success of Cowell's other male singing group Il Divo.
 								.artSplitter.mol-img-group
 									.splitLeft
 										.mol-img
-											img#i-6adcccfee87c07c0.blkBorder.img-share(src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CD5000000578-3938014-Richard_said_that_he_stopped_with_the_self_pity_and_curbed_his_f-a-20_1479237607284.jpg', style='display: none', height='511', width='306', alt="Richard said that he stopped with 'the self-pity' and curbed his frustrations in the gym")
+											img#i-6adcccfee87c07c0.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CD5000000578-3938014-Richard_said_that_he_stopped_with_the_self_pity_and_curbed_his_f-a-20_1479237607284.jpg', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CD5000000578-3938014-Richard_said_that_he_stopped_with_the_self_pity_and_curbed_his_f-a-20_1479237607284.jpg', height='511', width='306', alt="Richard said that he stopped with 'the self-pity' and curbed his frustrations in the gym")
 											noscript
 												img#i-6adcccfee87c07c0.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CD5000000578-3938014-Richard_said_that_he_stopped_with_the_self_pity_and_curbed_his_f-a-20_1479237607284.jpg', height='511', width='306', alt="Richard said that he stopped with 'the self-pity' and curbed his frustrations in the gym")
 									.splitRight
 										.mol-img
-											img#i-1f9172c9fe49f8e5.blkBorder.img-share(src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C61200000578-3938014-Richard_shows_off_his_newly_toned_body-a-21_1479237607289.jpg', style='display: none', height='511', width='306', alt='Richard shows off his newly toned body')
+											img#i-1f9172c9fe49f8e5.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C61200000578-3938014-Richard_shows_off_his_newly_toned_body-a-21_1479237607289.jpg', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C61200000578-3938014-Richard_shows_off_his_newly_toned_body-a-21_1479237607289.jpg', height='511', width='306', alt='Richard shows off his newly toned body')
 											noscript
 												img#i-1f9172c9fe49f8e5.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C61200000578-3938014-Richard_shows_off_his_newly_toned_body-a-21_1479237607289.jpg', height='511', width='306', alt='Richard shows off his newly toned body')
 									.clear
@@ -292,90 +274,72 @@ html(lang='en')
 										| Richard said that he stopped with 'the self-pity' and curbed his frustrations in the gym
 								.artSplitter.mol-img-group
 									.mol-img
-										img#i-2c7e3db29f3a670.blkBorder.img-share(src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CAE000000578-3938014-The_singer_says_that_he_finally_has_the_toned_torso_he_was_alway-a-22_1479237607299.jpg', style='display: none', height='779', width='634', alt='The singer says that he finally has the toned torso he was always after after performing HIIT workouts ')
+										img#i-2c7e3db29f3a670.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CAE000000578-3938014-The_singer_says_that_he_finally_has_the_toned_torso_he_was_alway-a-22_1479237607299.jpg', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CAE000000578-3938014-The_singer_says_that_he_finally_has_the_toned_torso_he_was_alway-a-22_1479237607299.jpg',  height='779', width='634', alt='The singer says that he finally has the toned torso he was always after after performing HIIT workouts ')
 										noscript
 											img#i-2c7e3db29f3a670.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65CAE000000578-3938014-The_singer_says_that_he_finally_has_the_toned_torso_he_was_alway-a-22_1479237607299.jpg', height='779', width='634', alt='The singer says that he finally has the toned torso he was always after after performing HIIT workouts ')
 									p.imageCaption
 										| The singer says that he finally has the toned torso he was always after after performing HIIT workouts
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| But the tensions within the five-strong group got so bad that Richard felt he had no option but to quit - and turn his life around.
+									| But the tensions within the five-strong group got so bad that Richard felt he had no option but to quit - and turn his life around.
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| He said: 'I stopped the self pity and took my frustration out in the gym. I have gone from obese to athlete in four months and lost the weight of a small child.
+									| He said: 'I stopped the self pity and took my frustration out in the gym. I have gone from obese to athlete in four months and lost the weight of a small child.
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| 'I would go to the gym to do weighted resistance work three times a week and then every other day I would do a 12 minute HIIT work-out.
+									| 'I would go to the gym to do weighted resistance work three times a week and then every other day I would do a 12 minute HIIT work-out.
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| 'So many people think you need to run on the treadmill for hours on end but it's just not the case. HIIT  is a really easy way to get your cardio in and burn a crazy amount of calories!
+									| 'So many people think you need to run on the treadmill for hours on end but it's just not the case. HIIT  is a really easy way to get your cardio in and burn a crazy amount of calories!
 								.artSplitter.mol-img-group
 									.mol-img
-										img#i-77df2538ba0e3462.blkBorder.img-share(src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C6A700000578-3938014-Now_Richard_cannot_wait_to_get_started_on_his_solo_career_hoping-a-23_1479237607316.jpg', style='display: none', height='951', width='634', alt="Now Richard cannot wait to get started on his solo career - hoping the emulate the success America's big stars of swing")
+										img#i-77df2538ba0e3462.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C6A700000578-3938014-Now_Richard_cannot_wait_to_get_started_on_his_solo_career_hoping-a-23_1479237607316.jpg', data-src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C6A700000578-3938014-Now_Richard_cannot_wait_to_get_started_on_his_solo_career_hoping-a-23_1479237607316.jpg',  height='951', width='634', alt="Now Richard cannot wait to get started on his solo career - hoping the emulate the success America's big stars of swing")
 										noscript
 											img#i-77df2538ba0e3462.blkBorder.img-share(src='http://i.dailymail.co.uk/i/pix/2016/11/15/19/3A65C6A700000578-3938014-Now_Richard_cannot_wait_to_get_started_on_his_solo_career_hoping-a-23_1479237607316.jpg', height='951', width='634', alt="Now Richard cannot wait to get started on his solo career - hoping the emulate the success America's big stars of swing")
 									p.imageCaption
 										| Now Richard cannot wait to get started on his solo career - hoping the emulate the success America's big stars of swing
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| 'I began a food diary and a key part of my weight loss regime was meal replacement drinks. I would swap breakfast and lunch for one of the shakes most days.
+									| 'I began a food diary and a key part of my weight loss regime was meal replacement drinks. I would swap breakfast and lunch for one of the shakes most days.
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| 'I got all the nutrients I needed and it really accelerated my weight loss. Dieting is hard and using the right products can give you a daily pick-me-up and make life a lot easier, especially on really busy days.
+									| 'I got all the nutrients I needed and it really accelerated my weight loss. Dieting is hard and using the right products can give you a daily pick-me-up and make life a lot easier, especially on really busy days.
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| 'My body fat is now down to 12 per cent. I am continuing to use Shake It Slim but I am just swapping one meal a day instead of two now that I am at my ideal weight.
+									| 'My body fat is now down to 12 per cent. I am continuing to use Shake It Slim but I am just swapping one meal a day instead of two now that I am at my ideal weight.
 								p.mol-para-with-font
-									font(style='font-size:1.2em') 'This will enable me to control my weight and make sure it won't yo-yo again.'
+									| 'This will enable me to control my weight and make sure it won't yo-yo again.'
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| Now Richard cannot wait to get started on his solo career - hoping the emulate the success America's big stars of swing.
+									| Now Richard cannot wait to get started on his solo career - hoping the emulate the success America's big stars of swing.
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| He said: 'It's about time we had another Brit on the jazz scene. I think I can bring something new to the table.'
+									| He said: 'It's about time we had another Brit on the jazz scene. I think I can bring something new to the table.'
 								p.mol-para-with-font
-									font(style='font-size:1.2em')
-										| He currently writing his first solo album and is performing his first solo show at the Piano Works bar in Farringdon, London, on December 11.
+									| He currently writing his first solo album and is performing his first solo show at the Piano Works bar in Farringdon, London, on December 11.
 								#mol-826c5b80-ab33-11e6-9f88-c14f240d619d.art-ins.mol-factbox.floatLHS.femail
 									h3.wocc
 										span(style='font-weight: bold;') RICHARD'S DIET BEFORE  
 									.ins.cleared.xolcc.bdrcc
 										p.mol-para-with-font
-											font(style='font-size:1.2em;')
-												span.mol-style-bold Breakfast - 
-												| buttered toast and high sugar cereal such as Crunchy Nut Cornflakes
+											span.mol-style-bold Breakfast - 
+											| buttered toast and high sugar cereal such as Crunchy Nut Cornflakes
 										p.mol-para-with-font
-											font(style='font-size:1.2em')
-												span.mol-style-bold Lunch -
-												|  Burger King bacon double cheeseburger with chips and coke
+											span.mol-style-bold Lunch -
+											|  Burger King bacon double cheeseburger with chips and coke
 										p.mol-para-with-font
-											font(style='font-size:1.2em')
-												span.mol-style-bold Dinner - 
-												| extra large pizza
+											span.mol-style-bold Dinner - 
+											| extra large pizza
 										p.mol-para-with-font
-											font(style='font-size:1.2em')
-												span.mol-style-bold Snacks - 
-												| Haribos
+											span.mol-style-bold Snacks - 
+											| Haribos
 								#mol-826e7e60-ab33-11e6-9f88-c14f240d619d.art-ins.mol-factbox.floatLHS.femail
 									h3.wocc
 										span(style='font-weight: bold;') RICHARD'S DIET NOW  
 									.ins.cleared.xolcc.bdrcc
 										p.mol-para-with-font
-											font(style='font-size:1.2em;')
-												span.mol-style-bold Breakfast - 
-												| poached eggs
+											span.mol-style-bold Breakfast - 
+											| poached eggs
 										p.mol-para-with-font
-											font(style='font-size:1.2em')
-												span.mol-style-bold Lunch -
-												|  grilled chicken, sweet potato and runner beans or a strawberry Shake It Slim meal replacement from Forza Supplements
+											span.mol-style-bold Lunch -
+											|  grilled chicken, sweet potato and runner beans or a strawberry Shake It Slim meal replacement from Forza Supplements
 										p.mol-para-with-font
-											font(style='font-size:1.2em')
-												span.mol-style-bold Dinner - 
-												| grilled haddock and broccoli
+											span.mol-style-bold Dinner - 
+											| grilled haddock and broccoli
 										p.mol-para-with-font
-											font(style='font-size:1.2em')
-												span.mol-style-bold Snacks - 
-												| fresh almonds
+											span.mol-style-bold Snacks - 
+											| fresh almonds
 								p.mol-para-with-font
 									font(style='font-size:1.2em')  
 								p.mol-para-with-font
@@ -388,39 +352,34 @@ html(lang='en')
 									h3.social-links-title Share or comment on this article
 									#socialLinks.social-links.cleared
 										ul.bigLinks.sc-icns.cleared
-											li.facebook
-												a.js-tl(rel='nofollow')
-											li.twitter
-												a.js-tl(rel='nofollow')
-											li.pinterest
-												a.js-tl(rel='nofollow')
-											li.googleplus
+											li.share-facebook
+											li.share-twitter
+											li.share-pinterest
+											li.share-gplus
 												span.g-interactivepost(data-contenturl='http://www.dailymail.co.uk/femail/article-3938014/I-ve-gone-obese-athlete-Britain-s-Got-Talent-star-loses-four-stone-FOUR-MONTHS-branded-fat-one-band.html', data-contentdeeplinkid='/pages', data-clientid='746589970956-e10ciaf67a1id9ggu75ph3ds0sthn7j6.apps.googleusercontent.com', data-cookiepolicy='single_host_origin', data-prefilltext="'I've gone from obese to athlete': Britain's Got Talent star loses four stone in FOUR MONTHS after he was branded 'the fat one' in his band ", data-calltoactionlabel='VIEW', data-calltoactionurl='http://www.dailymail.co.uk/femail/article-3938014/I-ve-gone-obese-athlete-Britain-s-Got-Talent-star-loses-four-stone-FOUR-MONTHS-branded-fat-one-band.html')
 													a.js-tl(rel='nofollow')
-											li.email
+											li.share-email
 												a(rel='nofollow', href="mailto:?subject=Read this: 'I've gone from obese to athlete': Britain's Got Talent star loses four stone in FOUR MONTHS after he was branded 'the fat one' in his band &body=%27I%27ve%20gone%20from%20obese%20to%20athlete%27%3A%20Britain%27s%20Got%20Talent%20star%20loses%20four%20stone%20in%20FOUR%20MONTHS%20after%20he%20was%20branded%20%27the%20fat%20one%27%20in%20his%20band%C2%A0%0A%0AFormer%20Collabro%20singer%2C%20Richard%20Hadfield%2C%20%2022%2C%20from%20Stratford%2C%20East%20London%20has%20revealed%20his%20incredible%20four%20stone%20weight%20loss%20in%20as%20many%20months%20slimming%20down%20from%2018st%203lbs%20to%2014st%206lbs.%0A%0Ahttp%3A%2F%2Fwww.dailymail.co.uk%2Ffemail%2Farticle-3938014%2FI-ve-gone-obese-athlete-Britain-s-Got-Talent-star-loses-four-stone-FOUR-MONTHS-branded-fat-one-band.html%3Fito%3Demail_share_article-bottom%0A%0A%0AMost%20Read%20Articles%3A%0A%0ASo%20good%20she%20bought%20it%20twice%21%20The%20Duchess%20of%20Cambridge%20dazzles%20in%20%C2%A3995%20black%20cocktail%20dress%20at%20ceremony%20for%20children%27s%20mental%20health%20charity%20%28and%20it%E2%80%99s%20the%20SAME%20one%20she%20wore%20in%20red%20on%20her%20Canada%20tour%29%C2%A0%0Ahttp%3A%2F%2Fwww.dailymail.co.uk%2Ffemail%2Farticle-3960736%2FKate-goes-Dippy-dinosaurs-Duchess-Cambridge-gives-right-royal-send-Natural-History-Museum-s-world-famous-Diplodocus-s-sent-national-tour.html%3Fito%3Demail_share_article-bottom_most-read-articles%0A%0A%E2%80%98I%20had%20to%20do%20that%20as%20a%20mum%21%E2%80%99%20The%20Duchess%20of%20Cambridge%20puts%20a%20comforting%20arm%20around%20mother%20who%20dissolved%20in%20tears%20as%20her%20son%2C%2013%2C%20told%20Kate%20of%20his%20struggle%20with%20autism%20at%20charity%20awards%20ceremony%C2%A0%0Ahttp%3A%2F%2Fwww.dailymail.co.uk%2Ffemail%2Farticle-3962346%2FDuchess-Cambridge-comforts-mother-Place2Be-charity-awards-London.html%3Fito%3Demail_share_article-bottom_most-read-articles%0A%0AMother%20is%20branded%20%27incestuous%27%20for%20posting%20graphic%20videos%20of%20herself%20breastfeeding%20her%20two%20young%20sons%20in%20tandem%C2%A0%0Ahttp%3A%2F%2Fwww.dailymail.co.uk%2Ffemail%2Farticle-3960188%2FMother-branded-incestuous-posting-graphic-videos-breastfeeding-two-young-sons-tandem.html%3Fito%3Demail_share_article-bottom_most-read-articles%0A%0A")
 													span.wai e-mail
-											li#shareLinkBottom.share
+											li#shareLinkBottom.share-icons
 												a.js-sl.share-link(href='#socialLinks')
-											li#shareCountBottom.social-stats.social-stats-pipe
-												div
-													.shares_count 78
-													.shares_text shares
+											li.share-count
+												b 78
+												span shares
 							// NOTE: WARNING: render-partial is a function
 							#taboola-below-main-column
-							link(rel='stylesheet', href='http://i.dailymail.co.uk/static/mol-fe/static/mol-fe-most-watched-videos/1.6.0/styles/main-internal.css')
 							#most-watched-videos-wrapper.item(data-swipe-article='false', data-track-module='am-most_watched_videos_062016^most_watched_videos', data-track-selector='.videoLink', data-track-type='cl', data-track-pos='static')
 								#most-watched-videos.news(data-mol-fe-rotator='', data-embed='true', data-host='http://www.dailymail.co.uk', data-endpoint='/api/most-watched-videos', data-channel='news')
 									h2.mol-fe-rotator-header.channel-header
 										span.mol-fe-rotator-header-body
 											span.title
-												span Most watched
+												span Most watched 
 												span News videos
 									.mol-fe-rotator-body.cleared
 										ul.items-holder.cleared
 											li.mol-fe-rotator-item
 												a.channel-link.videoLink(href='/news/article-3961320/Bizarre-video-emerges-chef-beheading-live-octopus-guests-dissecting-moving-limbs.html?mwv_rm=rta', data-channel='news', data-source='Newsflare', data-modal-type='video-lightbox', data-freewheelid='', data-videoid='719600224738692928', data-recommendation-model='rta', data-target='/api/video-carousel.html?video-id=1362993&colour=news&channel=news&trackingType=am_most_watched_videos_062016 .video-lightbox-videojs')
-													span.thumb(style='background-image: url(http://i.dailymail.co.uk/i/pix/2016/11/22/14/3AA7AF3100000578-0-image-a-29_1479825776843.jpg)')
+													span.thumb(style='background-image: url(http://i.dailymail.co.uk/i/pix/2016/11/25/15/3ABFCAF600000578-0-image-a-5_1480087908030.jpg)')
 													span.colours-target.description-wrapper
 														span.description Gruesome moment Korean chef dissects a LIVE octopus
 													span.colours-target.description-mask
@@ -432,7 +391,37 @@ html(lang='en')
 													span.colours-target.description-mask
 											li.mol-fe-rotator-item
 												a.channel-link.videoLink(href='/news/article-3958936/Videos-reveal-panic-earthquake-Japan-amid-fears-huge-tsunamis.html?mwv_rm=rta', data-channel='news', data-source='Twitter', data-modal-type='video-lightbox', data-freewheelid='', data-videoid='608340858042170168', data-recommendation-model='rta', data-target='/api/video-carousel.html?video-id=1362777&colour=news&channel=news&trackingType=am_most_watched_videos_062016 .video-lightbox-videojs')
-													span.thumb(style='background-image: url(http://i.dailymail.co.uk/i/pix/2016/11/22/08/3AA5C9BE00000578-0-image-a-3_1479803650214.jpg)')
+													span.thumb(style='background-image: url(http://i.dailymail.co.uk/i/pix/2016/11/24/18/3AB9F51900000578-0-image-a-15_1480012687171.jpg)')
+													span.colours-target.description-wrapper
+														span.description Teen films a burning 'meteorite' moving across sky in Japan
+													span.colours-target.description-mask
+											li.mol-fe-rotator-item
+												a.channel-link.videoLink(href='/news/article-3961320/Bizarre-video-emerges-chef-beheading-live-octopus-guests-dissecting-moving-limbs.html?mwv_rm=rta', data-channel='news', data-source='Newsflare', data-modal-type='video-lightbox', data-freewheelid='', data-videoid='719600224738692928', data-recommendation-model='rta', data-target='/api/video-carousel.html?video-id=1362993&colour=news&channel=news&trackingType=am_most_watched_videos_062016 .video-lightbox-videojs')
+													span.thumb(style='background-image: url(http://i.dailymail.co.uk/i/pix/2016/11/25/15/3ABFCAF600000578-0-image-a-5_1480087908030.jpg)')
+													span.colours-target.description-wrapper
+														span.description Gruesome moment Korean chef dissects a LIVE octopus
+													span.colours-target.description-mask
+											li.mol-fe-rotator-item
+												a.channel-link.videoLink(href='/news/article-3935566/Man-accused-raping-killing-4-year-old-girl-murdered-mob-storm-police-station-held-drag-hang-tree.html?mwv_rm=rta', data-channel='news', data-source='CEN', data-modal-type='video-lightbox', data-freewheelid='', data-videoid='8028411000307562316', data-recommendation-model='rta', data-target='/api/video-carousel.html?video-id=1358231&colour=news&channel=news&trackingType=am_most_watched_videos_062016 .video-lightbox-videojs')
+													span.thumb(style='background-image: url(http://i.dailymail.co.uk/i/pix/2016/11/14/19/3A60027300000578-0-image-a-3_1479150341351.jpg)')
+													span.colours-target.description-wrapper
+														span.description Mob storm police station and lynch suspected paedophile
+													span.colours-target.description-mask
+											li.mol-fe-rotator-item
+												a.channel-link.videoLink(href='/news/article-3958936/Videos-reveal-panic-earthquake-Japan-amid-fears-huge-tsunamis.html?mwv_rm=rta', data-channel='news', data-source='Twitter', data-modal-type='video-lightbox', data-freewheelid='', data-videoid='608340858042170168', data-recommendation-model='rta', data-target='/api/video-carousel.html?video-id=1362777&colour=news&channel=news&trackingType=am_most_watched_videos_062016 .video-lightbox-videojs')
+													span.thumb(style='background-image: url(http://i.dailymail.co.uk/i/pix/2016/11/24/18/3AB9F51900000578-0-image-a-15_1480012687171.jpg)')
+													span.colours-target.description-wrapper
+														span.description Teen films a burning 'meteorite' moving across sky in Japan
+													span.colours-target.description-mask
+											li.mol-fe-rotator-item
+												a.channel-link.videoLink(href='/news/article-3935566/Man-accused-raping-killing-4-year-old-girl-murdered-mob-storm-police-station-held-drag-hang-tree.html?mwv_rm=rta', data-channel='news', data-source='CEN', data-modal-type='video-lightbox', data-freewheelid='', data-videoid='8028411000307562316', data-recommendation-model='rta', data-target='/api/video-carousel.html?video-id=1358231&colour=news&channel=news&trackingType=am_most_watched_videos_062016 .video-lightbox-videojs')
+													span.thumb(style='background-image: url(http://i.dailymail.co.uk/i/pix/2016/11/14/19/3A60027300000578-0-image-a-3_1479150341351.jpg)')
+													span.colours-target.description-wrapper
+														span.description Mob storm police station and lynch suspected paedophile
+													span.colours-target.description-mask
+											li.mol-fe-rotator-item
+												a.channel-link.videoLink(href='/news/article-3958936/Videos-reveal-panic-earthquake-Japan-amid-fears-huge-tsunamis.html?mwv_rm=rta', data-channel='news', data-source='Twitter', data-modal-type='video-lightbox', data-freewheelid='', data-videoid='608340858042170168', data-recommendation-model='rta', data-target='/api/video-carousel.html?video-id=1362777&colour=news&channel=news&trackingType=am_most_watched_videos_062016 .video-lightbox-videojs')
+													span.thumb(style='background-image: url(http://i.dailymail.co.uk/i/pix/2016/11/24/18/3AB9F51900000578-0-image-a-15_1480012687171.jpg)')
 													span.colours-target.description-wrapper
 														span.description Teen films a burning 'meteorite' moving across sky in Japan
 													span.colours-target.description-mask
@@ -442,19 +431,6 @@ html(lang='en')
 							#most-read-news-wrapper.item(data-track-module='am-most_read_news^most_read_news', data-track-selector='.rotator-panels a', data-track-pos='static')
 								#most-read-news.new.shallow-ac.mini
 									.rotator.news
-										ul.rotator-panels
-											li.new.shallow-ac.mini.link-bogr6.linkro-wocc
-												a(href='/news/article-3958402/Mystery-English-speaking-girl-living-streets-Rome-Internet-campaigners-try-identify-young-homeless-woman-Maria-amid-speculation-Madeleine-McCann.html')
-													img(src='http://i.dailymail.co.uk/i/pix/2016/11/22/16/3AA81FB900000578-0-image-m-24_1479830789111.jpg', alt='', width='154', height='115')
-													span.wocc.bdrcc EXCLUSIVE: 'That's my girl!' Swedish father reveals the...
-											li.new.shallow-ac.mini.link-bogr6.linkro-wocc
-												a(href='/news/article-3962000/So-fault-Angry-cyclist-posts-video-collision-slams-car-bike-lane-motorist-drives-leaving-writhing-agony.html')
-													img(src='http://i.dailymail.co.uk/i/pix/2016/11/22/19/3AA8E70F00000578-0-image-m-36_1479843467918.jpg', alt='', width='154', height='115')
-													span.wocc.bdrcc So whose fault is it? Angry cyclist posts video of...
-											li.new.shallow-ac.mini.link-bogr6.linkro-wocc
-												a(href='/news/article-3962906/Help-tenants-agent-fees-banned-Chancellor-plans-increase-living-wage-help-families-just-managing.html')
-													img(src='http://i.dailymail.co.uk/i/pix/2016/11/23/11/3AAF219500000578-0-image-a-7_1479899922911.jpg', alt='', width='154', height='115')
-													span.wocc.bdrcc 'We're writing a new chapter for Britain!' Chancellor...
 										.rotator-title.wocc
 											h2 MOST READ NEWS
 											.rotator-pages
@@ -466,13 +442,38 @@ html(lang='en')
 													i.bg
 													i.ico
 													a(href='#', data-page='next') Next
-												ul
-													li.linkro-wocc
+												ul.list-paginator
+													li.linkro-wocc.link-wocc
 														a(href='#', data-page='1') ●
 													li.linkro-wocc
 														a(href='#', data-page='2') ●
 													li.linkro-wocc
 														a(href='#', data-page='3') ●
+										ul.rotator-panels
+											li.most-read-item
+												a(href='/news/article-3958402/Mystery-English-speaking-girl-living-streets-Rome-Internet-campaigners-try-identify-young-homeless-woman-Maria-amid-speculation-Madeleine-McCann.html')
+													img(src='http://i.dailymail.co.uk/i/pix/2016/11/22/16/3AA81FB900000578-0-image-m-24_1479830789111.jpg', alt='', width='154', height='115')
+													span.wocc.bdrcc EXCLUSIVE: 'That's my girl!' Swedish father reveals the...
+											li.most-read-item
+												a(href='/news/article-3962000/So-fault-Angry-cyclist-posts-video-collision-slams-car-bike-lane-motorist-drives-leaving-writhing-agony.html')
+													img(src='http://i.dailymail.co.uk/i/pix/2016/11/22/19/3AA8E70F00000578-0-image-m-36_1479843467918.jpg', alt='', width='154', height='115')
+													span.wocc.bdrcc So whose fault is it? Angry cyclist posts video of...
+											li.most-read-item
+												a(href='/news/article-3962906/Help-tenants-agent-fees-banned-Chancellor-plans-increase-living-wage-help-families-just-managing.html')
+													img(src='http://i.dailymail.co.uk/i/pix/2016/11/23/11/3AAF219500000578-0-image-a-7_1479899922911.jpg', alt='', width='154', height='115')
+													span.wocc.bdrcc 'We're writing a new chapter for Britain!' Chancellor...
+											li.most-read-item
+												a(href='/news/article-3958402/Mystery-English-speaking-girl-living-streets-Rome-Internet-campaigners-try-identify-young-homeless-woman-Maria-amid-speculation-Madeleine-McCann.html')
+													img(src='http://i.dailymail.co.uk/i/pix/2016/11/22/16/3AA81FB900000578-0-image-m-24_1479830789111.jpg', alt='', width='154', height='115')
+													span.wocc.bdrcc EXCLUSIVE: 'That's my girl!' Swedish father reveals the...
+											li.most-read-item
+												a(href='/news/article-3962000/So-fault-Angry-cyclist-posts-video-collision-slams-car-bike-lane-motorist-drives-leaving-writhing-agony.html')
+													img(src='http://i.dailymail.co.uk/i/pix/2016/11/22/19/3AA8E70F00000578-0-image-m-36_1479843467918.jpg', alt='', width='154', height='115')
+													span.wocc.bdrcc So whose fault is it? Angry cyclist posts video of...
+											li.most-read-item
+												a(href='/news/article-3962906/Help-tenants-agent-fees-banned-Chancellor-plans-increase-living-wage-help-families-just-managing.html')
+													img(src='http://i.dailymail.co.uk/i/pix/2016/11/23/11/3AAF219500000578-0-image-a-7_1479899922911.jpg', alt='', width='154', height='115')
+													span.wocc.bdrcc 'We're writing a new chapter for Britain!' Chancellor...
 							#reader-comments.article-reader-comments.article-id-3938014
 								a(name='comments')
 								.rc-content
@@ -481,7 +482,7 @@ html(lang='en')
 											img(src='http://f.dailymail.co.uk/i/furniture/comments/articles/btn_add-your-comment.png')
 										.title-cont
 											img(src='http://f.dailymail.co.uk/i/furniture/comments/articles/icon_comments_74.png')
-											div
+											div.cmnt-bl-3
 												h3
 													| Comments (
 													span.readerCommentsCount 364
@@ -489,7 +490,7 @@ html(lang='en')
 												p
 													| Share what you think
 									ul#rc-tabs.js-links.dm-tabs.cnr5.cleared
-										li.dm-tab.dm-tab-on.bdrgr5.cnr-bdr.wogr5.link-wox.js-active
+										li.dm-tab.dm-tab-on.bdrgr5.cnr-bdr.wogr5.link-wox.js-active.linkro-bdrgr5
 											span.xogr5.tl
 											span.xogr5.tr
 											a(href='#') Newest
@@ -507,21 +508,253 @@ html(lang='en')
 											a(href='#') Worst rated
 									.view-more-container.xogr5.cleared
 										a#js-view-all-link.btn-grey.bdrgr4.gr5ox.float-r.js-view-all-link(rel='nofollow')
-											span.comment-link-icon  
+											span.comment-link-icon
 											span.comment-link-text View all
 									.pagination-container.cleared
 									.rc-title
 										p The comments below have not been moderated.
 									#js-comments.comments-list
+										.post-holder
+											.comment-post
+												img.avatar(src="img/icons/dummy_148x178.jpg", alt="")
+												a(href="").reportAbuseIcon
+												p.user-info
+													a(href="").user-link Philip Morris
+													span.user-location
+														|, West Tennessee, United States, 1 week ago
+												p.post-text
+													|A little too much attention to the treasure trail I think.
+												.post-footer
+													ul.comments-share
+														li
+															a.facebook
+														li
+															a.twitter
+														li
+															a.pinterest
+														li
+															a.g-plus
+														li
+															a.copyCommentLink
+													.rate-holder
+														span.click-rate Click to rate
+														a(href="").up-rate 10
+															.arrow
+														a(href="").dow-rate 0
+															.arrow
+											.see-all
+												span 2 of 5 replies
+												a(href="#") See all replies
+													.rc-down-arrow
+
+											.comment-post.answer
+												img.avatar(src="img/icons/dummy_148x178.jpg", alt="")
+												a(href="").reportAbuseIcon
+												p.user-info
+													a(href="").user-link Philip Morris
+													span.user-location
+														|, West Tennessee, United States, 1 week ago
+												p.post-text
+													|To be fair, at this time of year people buy this kind of rubbish, they drink the meal replacement and wash it down with a take away and think they'll get slim.
+												.post-footer
+													ul.comments-share
+														li
+															a.facebook
+														li
+															a.twitter
+														li
+															a.pinterest
+														li
+															a.g-plus
+														li
+															a.copyCommentLink
+													.rate-holder
+														span.click-rate Click to rate
+														a(href="").up-rate 10
+															.arrow
+														a(href="").dow-rate 0
+															.arrow
+											.comment-post.answer
+												img.avatar(src="img/icons/dummy_148x178.jpg", alt="")
+												a(href="").reportAbuseIcon
+												p.user-info
+													a(href="").user-link Philip Morris
+													span.user-location
+														|, West Tennessee, United States, 1 week ago
+												p.post-text
+													|A little too much attention to the treasure trail I think.
+												.post-footer
+													ul.comments-share
+														li
+															a.facebook
+														li
+															a.twitter
+														li
+															a.pinterest
+														li
+															a.g-plus
+														li
+															a.copyCommentLink
+													.rate-holder
+														span.click-rate Click to rate
+														a(href="").up-rate 10
+															.arrow
+														a(href="").dow-rate 0
+															.arrow
+											.reply-form
+												textarea
+												button Post
+										.post-holder
+											.comment-post
+												img.avatar(src="img/icons/dummy_148x178.jpg", alt="")
+												a(href="").reportAbuseIcon
+												p.user-info
+													a(href="").user-link Philip Morris
+													span.user-location
+														|, West Tennessee, United States, 1 week ago
+												p.post-text
+													|A little too much attention to the treasure trail I think.
+												.post-footer
+													ul.comments-share
+														li
+															a.facebook
+														li
+															a.twitter
+														li
+															a.pinterest
+														li
+															a.g-plus
+														li
+															a.copyCommentLink
+													.rate-holder
+														span.click-rate Click to rate
+														a(href="").up-rate 10
+															.arrow
+														a(href="").dow-rate 0
+															.arrow
+										.post-holder
+											.comment-post
+												img.avatar(src="img/icons/dummy_148x178.jpg", alt="")
+												a(href="").reportAbuseIcon
+												p.user-info
+													a(href="").user-link Philip Morris
+													span.user-location
+														|, West Tennessee, United States, 1 week ago
+												p.post-text
+													|A little too much attention to the treasure trail I think.
+												.post-footer
+													ul.comments-share
+														li
+															a.facebook
+														li
+															a.twitter
+														li
+															a.pinterest
+														li
+															a.g-plus
+														li
+															a.copyCommentLink
+													.rate-holder
+														span.click-rate Click to rate
+														a(href="").up-rate 10
+															.arrow
+														a(href="").dow-rate 0
+															.arrow
+										.post-holder
+											.comment-post
+												img.avatar(src="img/icons/dummy_148x178.jpg", alt="")
+												a(href="").reportAbuseIcon
+												p.user-info
+													a(href="").user-link Philip Morris
+													span.user-location
+														|, West Tennessee, United States, 1 week ago
+												p.post-text
+													|A little too much attention to the treasure trail I think.
+												.post-footer
+													ul.comments-share
+														li
+															a.facebook
+														li
+															a.twitter
+														li
+															a.pinterest
+														li
+															a.g-plus
+														li
+															a.copyCommentLink
+													.rate-holder
+														span.click-rate Click to rate
+														a(href="").up-rate 10
+															.arrow
+														a(href="").dow-rate 0
+															.arrow
+										.post-holder
+											.comment-post
+												img.avatar(src="img/icons/dummy_148x178.jpg", alt="")
+												a(href="").reportAbuseIcon
+												p.user-info
+													a(href="").user-link Philip Morris
+													span.user-location
+														|, West Tennessee, United States, 1 week ago
+												p.post-text
+													|A little too much attention to the treasure trail I think.
+												.post-footer
+													ul.comments-share
+														li
+															a.facebook
+														li
+															a.twitter
+														li
+															a.pinterest
+														li
+															a.g-plus
+														li
+															a.copyCommentLink
+													.rate-holder
+														span.click-rate Click to rate
+														a(href="").up-rate 10
+															.arrow
+														a(href="").dow-rate 0
+															.arrow
+										.post-holder
+											.comment-post
+												img.avatar(src="img/icons/dummy_148x178.jpg", alt="")
+												a(href="").reportAbuseIcon
+												p.user-info
+													a(href="").user-link Philip Morris
+													span.user-location
+														|, West Tennessee, United States, 1 week ago
+												p.post-text
+													|A little too much attention to the treasure trail I think.
+												.post-footer
+													ul.comments-share
+														li
+															a.facebook
+														li
+															a.twitter
+														li
+															a.pinterest
+														li
+															a.g-plus
+														li
+															a.copyCommentLink
+													.rate-holder
+														span.click-rate Click to rate
+														a(href="").up-rate 10
+															.arrow
+														a(href="").dow-rate 0
+															.arrow
+
+															
+
 									.pagination-container.pagination-container-bottom.cleared
 									.view-more-container.view-more-container-bottom.xogr5.cleared
 										a#js-view-all-link.btn-grey.bdrgr4.gr5ox.float-r.js-view-all-link(rel='nofollow')
 											span.comment-link-icon  
 											span.comment-link-text View all
-									p.bold.pad5.wogr5.rc-info
+									p.bot-info
 										| The views expressed in the contents above are those of our users and do not necessarily reflect the views of MailOnline.
 								a(href='#comments')
-								p.rc-title.bdrgr2 We are no longer accepting comments on this article.
 								.topcommenter
 									img.arrows(src='http://f.dailymail.co.uk/i/furniture/comments/articles/topcommenter.png')
 									span.text Who is this week's top commenter?
@@ -986,7 +1219,7 @@ html(lang='en')
 							img(src='http://i.dailymail.co.uk/i/furniture/misc/logo_cookie_reg.png', alt='Cookie regulation logo', width='12', height='12')
 
 
-
+		
 		// scripts block
 		link(type='text/css', rel='stylesheet', href='css/additional.css')
 		script(src='js/main.js', type='text/javascript')
