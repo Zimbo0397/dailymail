@@ -172,7 +172,8 @@ button
 		margin-left: 0
 		border-top-left-radius: 0
 		border-bottom-left-radius: 0
-
+.fff-pic
+	position: relative
 
 //----------------------------------
 // COLORS
@@ -1533,6 +1534,119 @@ img.blkBorder
 					background-color: transparent
 					background-image: url(../img/icons/spt_previewlinks_12.png)
 					font-size: 1px
+.mol-img	
+	position: relative
+	&:hover
+		.share-pictures-overlay
+			opacity: 1
+			transition: opacity .35s
+			pointer-events: initial
+
+.share-pictures-overlay
+	background-color: rgba(0,0,0,.5)
+	right: 10px
+	line-height: 25px
+	height: 310px
+	padding: 13px
+	bottom: 59px
+	padding-top: 57px
+	position: absolute
+	display: inline-block
+	border-radius: 4px
+	opacity: 0
+	pointer-events: none
+	transition: opacity .35s
+	.share-pictures-links
+		.share-pictures-icon
+			width: 40px
+			height: 40px
+			padding: 0
+			margin: 0 0 10px
+			list-style: none
+			background-image: url(http://i.mol.im/i/furniture/articles/sprite_image_sharing_2.png)
+			cursor: pointer
+			&.text
+				font-size: 11px
+				line-height: 14px
+				height: 30px
+				width: 60px
+				position: absolute
+				left: 2px
+				background: none
+				top: 10px
+				text-align: center
+				color: #fff
+				cursor: default
+			&.facebook
+				background-position: 0 -40px
+				&:hover
+					background-position: 0 0
+			&.twitter
+				background-position: -51px -40px
+				&:hover
+					background-position: -51px 0
+			&.pinterest
+				background-position: -340px -40px
+				&:hover
+					background-position: -340px 0
+			&.google
+				background-position: -102px -40px
+				&:hover
+					background-position: -102px 0
+			&.email
+				background-position: -153px -40px
+				&:hover
+					background-position: -153px 0
+	&.horizontal
+		right: 110px
+		bottom: 10px
+		height: auto
+		padding: 9px
+		padding-left: 70px
+		line-height: 0
+		.share-pictures-icon
+			display: inline-block
+			margin: 0 2px 0
+			&.text
+				top: 15px
+
+.mobile-gallery
+	right: 10px
+	box-sizing: border-box
+	display: table
+	line-height: 34px
+	font-size: 16px
+	text-align: left
+	background-position: 0
+	background-repeat: no-repeat
+	background-color: #000
+	background-color: rgba(0, 0, 0, 0.4)
+	border-radius: 3px
+	font-size: 18px
+	font-family: arial
+	color: #fff
+	position: absolute
+	text-align: center
+	cursor: pointer
+	bottom: 11px
+	.mobile-gallery-icon
+		background: url(http://i.dailymail.co.uk/i/furniture/mobile/icon_camera_90x68.png) no-repeat 10px
+		height: 20px
+		width: 24px
+		float: none
+		display: table-cell
+		vertical-align: middle
+		padding-top: 7px
+		padding-right: 10px
+		padding-left: 10px
+		background-size: 27px
+		box-sizing: content-box
+	span
+		float: none
+		display: table-cell
+		vertical-align: middle
+		padding-right: 10px
+		padding-top: 2px
 //----------------------------------
 // END VETAL
 //----------------------------------
