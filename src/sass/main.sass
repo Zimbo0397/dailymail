@@ -133,7 +133,7 @@ button
 	font-size: 0.8em
 	padding: 0 3px
 	cursor: pointer
-	background: transparent url(http://i.mol.im/i/furniture/articles/button_bg.gif) repeat-x 0 0
+	background: transparent url(../img/icons/button_bg.gif) repeat-x 0 0
 	color: #666
 	display: inline-block
 .btn
@@ -428,6 +428,8 @@ button
 	li
 		font-size: 0
 		vertical-align: middle
+		color: #ffe8ed
+		font-size: 16px
 		&:first-child
 			a
 				border: none
@@ -571,7 +573,7 @@ button
 			display: inline
 
 	.text-input
-		padding: 0 4px
+		padding: 0 1px
 		min-height: 21px
 		font-size: 1.4em
 		width: 120px
@@ -587,12 +589,25 @@ button
 		height: 21px
 		&::-moz-focus-inner
 			border: 0
+.column-right
+	.femail
+		.wocc
+			color: #fff
+			background-color: #c562a5
+			border-top-right-radius: 7px
+			border-top-left-radius: 7px
+			padding: 4px 5px 2px
+			font-size: 1.05em
+			line-height: 1.2em
 
 //----------------------------------
 //  RIGHT COL VETAL
 //----------------------------------
 .right-sidebar-holder
 	margin-top: 4px
+.html_snippet_module
+	margin-top: 31px
+	margin-bottom: 7px
 .dms-puff
 	li
 		height: 40px
@@ -600,6 +615,73 @@ button
 		padding: 0
 		margin-bottom: 3px
 		display: inline-block
+		overflow: hidden
+		vertical-align: top
+		&.facebook
+			a
+				background-position: 0 0
+		&.twitter
+			a
+				background-position: -152px 0
+		&.pinterest
+			a
+				background-position: 304px 0
+		&.gplus
+			a
+				background-position: 152px 0
+	a
+		height: 100%
+		width: 100%
+		font-size: 0.75em
+		line-height: 1.2em
+		padding: 6px 0 0 46px
+		color: #fff
+		background-image: url(../img/icons/like-follow_4.png)
+		display: inline-block
+		cursor: pointer
+	span
+		display: block
+
+.side-article
+	display: inline-block
+	height: 120px
+	padding: 4px 163px 5px 5px 
+	position: relative
+	background: #e3e3e3
+	margin-top: 5px
+	&:hover
+		background: #c562a5
+		a
+			color: #fff
+			strong
+				color: #fff
+		.arrow-small-r
+			background-position: -20px -120px
+	.arrow-small-r
+		margin: 3px 1px 0 0
+		width: 5px
+		height: 11px
+		background: url(../img/icons/spt_arrows_8.gif) no-repeat -160px -120px
+		font-size: 1px
+		display: inline-block
+		vertical-align: middle
+		margin-right: 2px
+	a
+		display: inline-block
+		color: #000
+		strong
+			color: #004db3
+	img
+		width: 154px
+		height: 100%
+		position: absolute
+		top: 0px
+		right: 0px
+	p
+		font-size: 0.75em
+		line-height: 1.17em
+	b
+		font-size: 0.75em
 //----------------------------------
 //  END RIGHT COL VETAL
 //---------------------------------
@@ -1149,7 +1231,7 @@ img.blkBorder
 		line-height: 13px
 		
 .comment-link-icon
-	background: url(http://f.dailymail.co.uk/i/furniture/spt_previewlinks_5.gif) -30px 0
+	background: url(../img/icons/KOUAilIMhbykIhMpCK5kAAAOw==.gif) -30px 0
 	height: 12px
 	left: 0
 	margin-top: 2px
@@ -1160,7 +1242,7 @@ img.blkBorder
 
 #reader-comments
 	.rc-title
-		background-image: url(http://f.dailymail.co.uk/i/furniture/comments/articles/comment_ticker.png)
+		background-image: url(../img/icons/comment_ticker.png)
 		position: relative
 		font-size: 12px
 		p
@@ -1202,7 +1284,7 @@ img.blkBorder
 		position: relative
 		.rc-down-arrow
 			position: absolute
-			background: url(http://f.dailymail.co.uk/i/furniture/comments/articles/spt_arrows_commentrating.png) no-repeat -301px 0
+			background: url(../img/icons/spt_arrows_commentrating.png) no-repeat -301px 0
 			display: inline-block
 			width: 20px
 			height: 10px
@@ -1245,7 +1327,7 @@ img.blkBorder
 		width: 11px
 		height: 11px
 		visibility: hidden
-		background: url(http://f.dailymail.co.uk/i/furniture/comments/articles/spt_arrows_commentrating.png) no-repeat -490px 0
+		background: url(../img/icons/spt_arrows_commentrating.png) no-repeat -490px 0
 	.user-info
 		margin: 5px 0
 		padding-right: 40px
@@ -1278,7 +1360,7 @@ img.blkBorder
 				a
 					width: 20px
 					height: 20px
-					background: url(http://f.dailymail.co.uk/i/furniture/comments/articles/icon_share_23.png) left -40px no-repeat
+					background: url(../img/icons/icon_share_23.png) left -40px no-repeat
 					vertical-align: middle
 					display: inline-block
 					cursor: pointer
@@ -1304,7 +1386,7 @@ img.blkBorder
 				padding: 0 10px 0 30px
 			.arrow
 				padding: 1px 6px 1px 5px
-				background-image: url(http://f.dailymail.co.uk/i/furniture/comments/articles/spt_arrows_commentrating_5.png)
+				background-image: url(../img/icons/spt_arrows_commentrating.png)
 				display: inline-block
 				margin: 0
 				position: absolute
@@ -1449,7 +1531,7 @@ img.blkBorder
 					height: 13px
 					width: 18px
 					background-color: transparent
-					background-image: url(http://i.mol.im/i/furniture/spt_previewlinks_12.png)
+					background-image: url(../img/icons/spt_previewlinks_12.png)
 					font-size: 1px
 //----------------------------------
 // END VETAL
